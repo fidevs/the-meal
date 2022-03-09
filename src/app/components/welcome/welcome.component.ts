@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { ApiService, Items, Meal, MealItem, Meals } from 'src/app/services/api.service';
-import { MatDialog, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -31,6 +31,8 @@ export class WelcomeComponent implements OnInit {
     });
   }
 
+  showMoreDetails() {}
+
 }
 
 
@@ -42,8 +44,15 @@ export class WelcomeComponent implements OnInit {
 })
 export class RandomMealDialog {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: Meal, private router: Router) {}
+  constructor(
+    private router: Router,
+    @Inject(MAT_DIALOG_DATA) public data: Meal,
+    private ref: MatDialogRef<RandomMealDialog>
+  ) {}
 
-  showMoreDetails() {}
+  showMoreDetails() {
+    this.router.navigateByUrl('/home/details/' + this.data.idMeal);
+    this.ref.close();
+  }
 
 }

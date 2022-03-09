@@ -1,5 +1,14 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
 <div *ngIf="!loading" class="list-container">
-    
+    <div *ngFor="let meal of meals" class="meal-item">
+        <div class="polaroid">
+            <img [src]="meal.strMealThumb + '/preview'" [alt]="meal.strMeal + '.jpg'">
+            <div class="container">
+                <h2>{{meal.strMeal}}</h2>
+            </div>
+            <div class="dialog-actions">
+                <button mat-button color="primary" [routerLink]="['/home/details', meal.idMeal]">Más detalles</button>
+            </div>
+        </div>
+    </div>
 </div>
-
