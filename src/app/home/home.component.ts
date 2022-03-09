@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../services/api.service';
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  constructor(private authService: AuthService) { }
 
-  constructor() { }
+  ngOnInit(): void { }
 
-  ngOnInit(): void {
+  goToProfile() { }
+
+  logout() {
+    this.authService.logout();
   }
 
 }

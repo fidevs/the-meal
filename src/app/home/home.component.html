@@ -1,1 +1,18 @@
-<p>home works!</p>
+<div class="home-container">
+    <mat-toolbar>
+        <span>The Meal</span>
+        <span class="blank-space"></span>
+        <mat-chip-list>
+            <mat-chip class="avatar-chip" (click)="goToProfile()">
+                <mat-chip-avatar>
+                    <img src="https://material.angular.io/assets/img/examples/shiba1.jpg" alt="Avatar">
+                </mat-chip-avatar>
+                Fide Omar...
+            </mat-chip>
+        </mat-chip-list>
+        <button mat-mini-fab color="secondary" (click)="logout()">
+            <mat-icon>exit_to_app</mat-icon>
+        </button>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+</div>
