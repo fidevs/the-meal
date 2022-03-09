@@ -12,6 +12,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatChipsModule } from '@angular/material/chips';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { PublicRoutingModule } from './public-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    PublicRoutingModule,
     MatCardModule,
     MatButtonModule,
     MatInputModule,

@@ -1,0 +1,7 @@
+.blank-space {
+    flex: 1 1 auto;
+}
+
+mat-chip-list {
+    margin-right: 10px;
+}
