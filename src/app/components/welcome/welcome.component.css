@@ -1,0 +1,10 @@
+mat-spinner {
+    margin: auto;
+    margin-top: 20%;
+}
+
+.list-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
