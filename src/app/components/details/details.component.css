@@ -1,0 +1,46 @@
+mat-spinner {
+    margin: auto;
+    margin-top: 20%;
+}
+
+.details-container {
+    display: flex;
+    justify-content: space-around;
+    line-height: normal;
+}
+
+.example-card {
+    max-width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 10px;
+}
+
+mat-card-header {
+    position: relative;
+}
+
+span {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.img-container {
+    padding: 0px 20px 5px 20px;
+}
+
+img {
+    border-radius: 5px;
+    width: 100%;
+}
+
+mat-chip-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.links-container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}

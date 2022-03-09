@@ -30,7 +30,9 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/app/utils/object-props-exrtactor.js"
+            ]
           },
           "configurations": {
             "production": {

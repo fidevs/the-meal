@@ -51,7 +51,10 @@ export class RandomMealDialog {
   ) {}
 
   showMoreDetails() {
-    this.router.navigateByUrl('/home/details/' + this.data.idMeal);
+    this.router.navigate(
+      ['/home/details'],
+      { queryParams: { id: this.data.idMeal } }
+    );
     this.ref.close();
   }
 

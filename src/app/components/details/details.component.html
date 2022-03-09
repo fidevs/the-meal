@@ -1,1 +1,52 @@
-<p>details works!</p>
+<mat-spinner *ngIf="loading"></mat-spinner>
+<div *ngIf="!loading" class="details-container">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Meal name</mat-card-title>
+            <mat-card-subtitle>Area | Category</mat-card-subtitle>
+            <span>Fecha de actualización</span>
+        </mat-card-header>
+        <div class="img-container">
+            <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+        </div>
+        <mat-card-content>
+            <mat-chip-list aria-label="Fish selection">
+                <mat-chip color="accent">One fish</mat-chip>
+                <mat-chip color="accent">Two fish</mat-chip>
+                <mat-chip color="accent">Primary fish</mat-chip>
+                <mat-chip color="accent">Accent fish</mat-chip>
+            </mat-chip-list>
+            <div class="links-container">
+                <button color="warn" mat-fab aria-label="Example icon button with a delete icon">
+                    <mat-icon>smart_display</mat-icon>
+                </button>
+                <button mat-fab aria-label="Example icon button with a delete icon">
+                    <mat-icon>language</mat-icon>
+                </button>
+            </div>
+        </mat-card-content>
+    </mat-card>
+
+    <mat-card class="example-card">
+        <mat-card-content>
+            <table>
+                <tr>
+                    <th>Ingredient</th>
+                    <th>Measure</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title>Instructions</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, velit est? Veritatis soluta vero eveniet iure eligendi omnis sequi totam et non amet adipisci pariatur earum quos, sit corporis nesciunt dicta corrupti quod magni sapiente officiis unde. Ipsam quibusdam debitis sed sunt molestiae officiis iste saepe nesciunt placeat deserunt enim quos aliquid est maiores, voluptas cum, eum asperiores vero voluptatum rem minus! Repellat esse quaerat ea temporibus, cum cupiditate odio obcaecati? Recusandae ex nam voluptate dignissimos consequuntur repellendus facere blanditiis. Maxime eligendi aspernatur facilis unde a sit et est tempora vel rem tempore quod minima voluptates accusantium cupiditate, amet odio quae perspiciatis ea. Ratione sunt quidem ab vero, aut voluptas facilis voluptatibus aliquam tempora, asperiores ipsa consectetur sint neque repellendus nostrum tempore. Enim voluptatum doloremque ea iste consequuntur iure distinctio quo itaque voluptate maxime. Qui vitae alias reiciendis illo sunt suscipit dicta ex numquam aliquam quos totam incidunt iure, id atque doloremque iusto laborum at ea. Ipsum animi voluptas corrupti, aut ipsa maxime dicta fugiat asperiores dolorum assumenda mollitia illo ducimus? Eligendi voluptatibus sapiente fugit iusto harum impedit consequatur perspiciatis magni repellendus illo sit excepturi quia vitae iste nulla tenetur, architecto rem dicta necessitatibus dolore, autem quas neque. Dignissimos, aliquid?</p>
+        </mat-card-content>
+    </mat-card>
+</div>

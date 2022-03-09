@@ -12,6 +12,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
+
 import { WelcomeComponent } from '../components/welcome/welcome.component';
 import { DetailsComponent } from '../components/details/details.component';
 
@@ -32,6 +34,7 @@ import { DetailsComponent } from '../components/details/details.component';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatDialogModule,
+    MatCardModule,
   ]
 })
 export class HomeModule { }

@@ -78,6 +78,7 @@ export interface Items {
 export class ApiService {
   randomMealUrl = 'https://www.themealdb.com/api/json/v1/1/random.php';
   mexicanMealUrl = 'https://www.themealdb.com/api/json/v1/1/filter.php?a=Mexican';
+  mealByIdUrl = 'https://www.themealdb.com/api/json/v1/1/lookup.php?i=';
 
   constructor(private http: HttpClient) { }
 
@@ -87,5 +88,9 @@ export class ApiService {
 
   consultMexicanMeals(): Observable<Items> {
     return this.http.get<Items>(this.mexicanMealUrl);
+  }
+
+  searchMealById(id: string): Observable<Meals> {
+    return this.http.get<Meals>(this.mealByIdUrl + id);
   }
 }
